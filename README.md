@@ -2,6 +2,8 @@
 
 A responsive, single-page personal portfolio to showcase your **Home**, **About**, **Projects**, and **Contact**—with smooth navigation, JS validation, and a downloadable résumé link.
 
+https://portfolio-beta-pied-42.vercel.app/
+
 ## Features
 - Home: name, short bio, hero image, CTA buttons.
 - About: education, skills, hobbies, chips.
