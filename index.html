@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aman Bansal • Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#home" class="brand">Aman<span> Bansal</span></a>
+    <nav id="nav">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="assets/resume.pdf" target="_blank" class="btn small">Download Resume</a>
+    </nav>
+    <button id="hamburger" aria-label="Menu" class="hamburger">☰</button>
+  </header>
+
+  <main>
+    <!-- Home / Hero -->
+    <section id="home" class="section hero">
+      <div class="hero-content">
+        <p class="badge">Aspiring Software Engineer • Front End • DSA</p>
+        <h1>Hi, I’m <span>Aman</span>. I build clean, resilient web apps.</h1>
+        <p class="lead">Computer Science undergrad with a traditional, craftsmanship first approach backed by modern tooling. I ship robust features, write readable code, and iterate fast.</p>
+        <div class="cta">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+        <div class="meta">
+          <span>📍 Haryana, India</span>
+          <span>✉️ bansalaman2419@gmail.com</span>
+          <span>🔗 <a href="https://github.com/amanbansal1506" target="_blank">GitHub</a></span>
+          <span>🔗 <a href="https://linkedin.com/in/aman-bansal-464b6a270" target="_blank">LinkedIn</a></span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/me.png" alt="Aman Bansal Avatar" />
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="about-grid">
+        <div class="about-card">
+          <h2>About Me</h2>
+          <p>I’m a Computer Science Engineering student focused on full stack development and pragmatic problem-solving. I prefer tried and true engineering practices, clean architecture, meaningful tests while staying forward looking with modern stacks.</p>
+          <ul class="bullets">
+            <li>Languages: C/C++, JavaScript/TypeScript, Java</li>
+            <li>Frontend: React, Tailwind, Leaflet</li>
+            <li>Backend: Node.js, Express, MongoDB</li>
+            <li>CS Fundamentals: Data Structures & Algorithms, DBMS, OS</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <h3>Education</h3>
+          <p>B.E. (CSE) — 2022–2026</p>
+          <h3>Hobbies</h3>
+          <p>Reading, fitness, building side projects.</p>
+          <div class="skills">
+            <span class="chip">Problem Solving</span>
+            <span class="chip">Clean Code</span>
+            <span class="chip">Team Player</span>
+            <span class="chip">Communication</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+      <h2>Featured Projects</h2>
+      <p class="muted">A curated selection with quick looks and detail modals.</p>
+      
+      <div class="grid">
+          
+        <article class="project" data-modal="p1">
+          <img src="assets/trendzee.png" alt="Trendzee"/>
+          <div class="project-body">
+            <h3>Trendzee</h3>
+            <p>Stay updated with new trends and clothing.</p>
+            <button class="btn small">Details</button>
+          </div>
+        </article>
+
+        <article class="project" data-modal="p2">
+          <img src="assets/Expense .png" alt="Expense Tracker"/>
+          <div class="project-body">
+            <h3>Expensely</h3>
+            <p>Track income/expenses with charts and local persistence.</p>
+            <button class="btn small">Details</button>
+          </div>
+        </article>
+
+        <article class="project" data-modal="p3">
+          <img src="assets/map.png" alt="Interactive Map"/>
+          <div class="project-body">
+            <h3>Explore India</h3>
+            <p>Explore India with category filters, search, and popups.</p>
+            <button class="btn small">Details</button>
+          </div>
+        </article>
+
+        <article class="project" data-modal="p4">
+          <img src="assets/Chat.png" alt="Chat App"/>
+          <div class="project-body">
+            <h3>Vibeconnect</h3>
+            <p>Socket.io chat with rooms, typing indicators, and history.</p>
+            <button class="btn small">Details</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <p class="muted">I’m currently evaluating Software Engineer Trainee opportunities.</p>
+
+      <form id="contact-form" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name" required />
+            <span class="error" data-for="name"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" required />
+            <span class="error" data-for="email"></span>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" type="text" placeholder="How can I help?" required />
+            <span class="error" data-for="subject"></span>
+          </div>
+          <div class="field full">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Share a few details..." required></textarea>
+            <span class="error" data-for="message"></span>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="btn primary" type="submit">Send Message</button>
+          <a class="btn" href="assets/resume.pdf" target="_blank">Download Resume</a>
+        </div>
+        <p id="form-status" class="status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> Aman Bansal • Built with HTML, CSS & JavaScript</small>
+  </footer>
+
+  <!-- Project Modals -->
+   <div id="p1" class="modal">
+    <div class="modal-card">
+      <button class="close" data-close="p1">×</button>
+      <h3>Trendzee</h3>
+      <p>Add, remove, and update items in a cart, Modern UI to browse clothing collections with high-quality images and descriptions.</p>
+    </div>
+  </div>
+
+  <div id="p2" class="modal">
+    <div class="modal-card">
+      <button class="close" data-close="p2">×</button>
+      <h3>Expensely</h3>
+      <p>Features: add/edit/delete, filters, localStorage, export/import JSON, Chart.js pie for categories.</p>
+    </div>
+  </div>
+
+  <div id="p3" class="modal">
+    <div class="modal-card">
+      <button class="close" data-close="p3">×</button>
+      <h3>Explore India (Leaflet)</h3>
+      <p>Explore India with categories, search, popups w/ images, and custom icons.</p>
+    </div>
+  </div>
+
+  <div id="p4" class="modal">
+    <div class="modal-card">
+      <button class="close" data-close="p4">×</button>
+      <h3>Vibeconnect </h3>
+      <p>Socket.io based chat app with rooms, typing indicators, and persistence.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
