@@ -36,7 +36,6 @@ function validateEmail(v){
 }
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault();
   let ok = true;
   const data = {};
   for (const id of fields){
@@ -47,10 +46,10 @@ form.addEventListener('submit', (e) => {
   }
   if (ok && !validateEmail(data.email)){ showError('email','Invalid email'); ok = false; }
   const status = document.getElementById('form-status');
-  if (!ok){ status.textContent = 'Please correct the highlighted fields.'; return; }
-  // Simulate send
-  status.textContent = 'Message sent! I will get back to you shortly.';
-  form.reset();
+  if (!ok){ 
+    status.textContent = 'Please correct the highlighted fields.';
+    e.preventDefault(); // only prevent if validation fails
+  }
 });
 
 // Project modals
