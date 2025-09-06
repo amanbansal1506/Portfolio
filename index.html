@@ -79,7 +79,6 @@
       <p class="muted">A curated selection with quick looks and detail modals.</p>
       
       <div class="grid">
-          
         <article class="project" data-modal="p1">
           <img src="assets/Trendzee.png" alt="Trendzee"/>
           <div class="project-body">
@@ -101,7 +100,7 @@
         <article class="project" data-modal="p3">
           <img src="assets/map.png" alt="Interactive Map"/>
           <div class="project-body">
-            <h3><a href=" https://amanbansal1506.github.io/Explore-India/" target="_blank">Explore India</a></h3>
+            <h3><a href="https://amanbansal1506.github.io/Explore-India/" target="_blank">Explore India</a></h3>
             <p>Explore India with category filters, search, and popups.</p>
             <button class="btn small">Details</button>
           </div>
@@ -118,40 +117,41 @@
       </div>
     </section>
 
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <p class="muted">I’m currently evaluating Software Engineer Trainee opportunities.</p>
 
- <section id="contact" class="section contact">
-  <h2>Contact</h2>
-  <p class="muted">I’m currently evaluating Software Engineer Trainee opportunities.</p>
-
-  <form id="contact-form" action="https://formspree.io/f/xnnblpbp" method="POST">
-    <div class="form-grid">
-      <div class="field">
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" placeholder="Your name" required />
-        <span class="error" data-for="name"></span>
-      </div>
-      <div class="field">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="you@example.com" required />
-        <span class="error" data-for="email"></span>
-      </div>
-      <div class="field">
-        <label for="subject">Subject</label>
-        <input id="subject" name="subject" type="text" placeholder="How can I help?" required />
-        <span class="error" data-for="subject"></span>
-      </div>
-      <div class="field full">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Share a few details..." required></textarea>
-        <span class="error" data-for="message"></span>
-      </div>
-    </div>
-    <div class="actions">
-      <button class="btn primary" type="submit">Send Message</button>
-      <a class="btn" href="assets/resume.pdf" target="_blank">Download Resume</a>
-    </div>
-  </form>
-</section>
+      <form id="contact-form" action="https://formspree.io/f/xnnblpbp" method="POST">
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+            <span class="error" data-for="name"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <span class="error" data-for="email"></span>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="How can I help?" required />
+            <span class="error" data-for="subject"></span>
+          </div>
+          <div class="field full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Share a few details..." required></textarea>
+            <span class="error" data-for="message"></span>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="btn primary" type="submit">Send Message</button>
+          <a class="btn" href="assets/resume.pdf" target="_blank">Download Resume</a>
+        </div>
+        <p id="form-status" class="status" role="status"></p>
+      </form>
+    </section>
 
   </main>
 
@@ -160,14 +160,13 @@
   </footer>
 
   <!-- Project Modals -->
-   <div id="p1" class="modal">
+  <div id="p1" class="modal">
     <div class="modal-card">
       <button class="close" data-close="p1">×</button>
       <h3>Trendzee</h3>
       <p>Add, remove, and update items in a cart, Modern UI to browse clothing collections with high-quality images and descriptions.</p>
     </div>
   </div>
-
   <div id="p2" class="modal">
     <div class="modal-card">
       <button class="close" data-close="p2">×</button>
@@ -175,7 +174,6 @@
       <p>Features: add/edit/delete, filters, localStorage, export/import JSON, Chart.js pie for categories.</p>
     </div>
   </div>
-
   <div id="p3" class="modal">
     <div class="modal-card">
       <button class="close" data-close="p3">×</button>
@@ -183,7 +181,6 @@
       <p>Explore India with categories, search, popups w/ images, and custom icons.</p>
     </div>
   </div>
-
   <div id="p4" class="modal">
     <div class="modal-card">
       <button class="close" data-close="p4">×</button>
