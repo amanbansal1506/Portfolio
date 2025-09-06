@@ -22,7 +22,7 @@ navLinks.forEach(a => a.addEventListener('click', () => nav.classList.remove('op
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Contact form validation (front-end)
+// Contact form validation
 const form = document.getElementById('contact-form');
 const fields = ['name','email','subject','message'];
 
@@ -48,7 +48,9 @@ form.addEventListener('submit', (e) => {
   const status = document.getElementById('form-status');
   if (!ok){ 
     status.textContent = 'Please correct the highlighted fields.';
-    e.preventDefault(); // only prevent if validation fails
+    e.preventDefault(); // stop submit only if invalid
+  } else {
+    status.textContent = 'Sending message...';
   }
 });
 
