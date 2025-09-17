@@ -3,7 +3,7 @@
 A responsive, single-page personal portfolio to showcase your **Home**, **About**, **Projects**, and **Contact**—with smooth navigation, JS validation, and a downloadable résumé link.
 
 # Portfolio Link
-https://portfolio-beta-pied-42.vercel.app/
+https://amanbansal1506.github.io/Portfolio/
 
 ## Features
 - Home: name, short bio, hero image, CTA buttons.
